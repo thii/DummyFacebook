@@ -7,13 +7,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadRandomSnark()
+        loadRandomSnark(self)
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadRandomSnark", name: UIApplicationWillEnterForegroundNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "loadRandomSnark:", name: UIApplicationWillEnterForegroundNotification, object: nil)
 
     }
 
-    func loadRandomSnark() {
+    @IBAction func loadRandomSnark(sender: AnyObject) {
         let randomIndex = Int(arc4random_uniform(UInt32(snarks.count)))
         self.snarkLabel.text = snarks[randomIndex]
     }

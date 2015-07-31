@@ -24,13 +24,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vms-AS-xRw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadRandomSnark:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="axc-h0-p3T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Vms-AS-xRw" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="1Eo-EM-aWa"/>
                             <constraint firstAttribute="trailing" secondItem="iI4-fq-4jb" secondAttribute="trailing" id="2Do-yx-y4F"/>
                             <constraint firstItem="iI4-fq-4jb" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="DbA-KX-yCT"/>
                             <constraint firstItem="iI4-fq-4jb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="RwZ-aa-uwd"/>
                             <constraint firstItem="iI4-fq-4jb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eID-li-CWK"/>
+                            <constraint firstItem="Vms-AS-xRw" firstAttribute="top" secondItem="iI4-fq-4jb" secondAttribute="top" id="fXL-XE-2p3"/>
+                            <constraint firstItem="Vms-AS-xRw" firstAttribute="trailing" secondItem="iI4-fq-4jb" secondAttribute="trailing" id="j1i-Ye-BSk"/>
+                            <constraint firstItem="Vms-AS-xRw" firstAttribute="leading" secondItem="iI4-fq-4jb" secondAttribute="leading" id="uPX-b7-NZq"/>
                         </constraints>
                     </view>
                     <connections>
